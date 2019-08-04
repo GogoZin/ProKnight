@@ -57,7 +57,7 @@ def main():
 				fp.write(rsp.content)
 				print(Fore.CYAN + "Sucess Get Htpp Proxies List !")
 		else:
-			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=https&anon=anonymous')
+			rsp = requests.get('https://www.proxy-list.download/api/v1/get?type=https')
 			with open("proxies.txt","wb") as fp:
 				fp.write(rsp.content)
 				print(Fore.CYAN + "Sucess Get Https Proxies List !")
