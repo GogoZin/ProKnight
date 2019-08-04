@@ -17,6 +17,11 @@ ProKnight Is A Denial Of Service Tool By Using Proxy To Attack
     python3 proknight.py
     
 ****************************************************
+# Update
+
+    Change Proxies' API -2019/8/4
+    
+****************************************************
 # Note
 
 Because Last Proxy Dos Script Has Good Requests
