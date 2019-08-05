@@ -13,7 +13,6 @@ import random
 import requests
 import threading
 import sys
-from colorama import Fore
 
 print( """MMMMMMMMMMMMMMMMMMKkkKMMMMMMMMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMNOxx0WMMMMMMMMMMMMMMMMM
