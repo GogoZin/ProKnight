@@ -5,7 +5,7 @@ ProKnight Is A Denial Of Service Tool By Using Proxy To Attack
 ************************************************************
 # INSTALL
 
-    pip3 install pysocks requests colorama
+    pip3 install pysocks requests 
     
     git clone https://github.com/GogoZin/ProKnight
     
@@ -21,13 +21,14 @@ ProKnight Is A Denial Of Service Tool By Using Proxy To Attack
 
     Change Proxies' API -2019/8/4
     
+    Add ProxiesChecker And Fix Some Bug -2019/08/05 #By Leeon123
 ****************************************************
 # Note
 
-Because Last Proxy Dos Script Has Good Requests
+    Thanks Leeon Add ProxyChecker And Fix Some Bug
+    
+    This Is A Perfect Work With My Perfect Friend  -2019/08/05
+    
+Leeon's Github : https://github.com/Leeon123
 
-So I Code This Script :))) And My Youtube Channel Is Near 2000 Sub
-
-Help Me To Get There And I Will Upload More Scripts
-
-GOGOZIN 2019/8/3
+GOGOZIN 2019/08/03
