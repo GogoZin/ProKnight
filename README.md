@@ -22,6 +22,8 @@ ProKnight Is A Denial Of Service Tool By Using Proxy To Attack
     Change Proxies' API -2019/8/4
     
     Add ProxiesChecker And Fix Some Bug -2019/08/05 #By Leeon123
+    
+    Update Threads Optimization -2019/8/11
 ****************************************************
 # Note
 
